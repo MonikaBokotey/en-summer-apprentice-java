@@ -13,5 +13,5 @@ public interface EventRepository extends CrudRepository<Event, Integer>{
       //  Event findByEventId(int id);
      List<Event> findByVenue_VenueIdAndEventType_EventTypeName(int venueId, String eventTypeName);
 
-      Event findByEventName(String name);
+      //Event findByEventName(String name);
 }
