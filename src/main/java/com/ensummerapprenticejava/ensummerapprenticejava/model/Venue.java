@@ -22,5 +22,11 @@ public class Venue implements Serializable {
 
     }
 
+    public int getVenueId() {
+        return venueId;
+    }
 
+    public void setVenueId(int venueId) {
+        this.venueId = venueId;
+    }
 }
