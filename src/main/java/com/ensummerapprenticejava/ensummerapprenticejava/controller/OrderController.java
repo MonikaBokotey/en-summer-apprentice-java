@@ -23,10 +23,10 @@ public class OrderController {
         return orderService.DisplayOrders(4);
     }
 
-//    @PostMapping("/api/orders")
-//    public ResponseEntity<Orders> registerOrder(@RequestBody OrderRequest orderRequest){
-//        return new ResponseEntity<>(orderService.registerOrder(orderRequest), HttpStatus.CREATED);
-//    }
+    @PostMapping("/api/orders")
+    public ResponseEntity<Orders> registerOrder(@RequestBody OrderRequest orderRequest){
+        return new ResponseEntity<>(orderService.registerOrder(orderRequest), HttpStatus.CREATED);
+    }
 
 
 }

@@ -17,13 +17,10 @@ public class EventServiceImplementation implements EventService{
     public EventServiceImplementation(EventRepository eventRepository) {
         this.eventRepository = eventRepository;
     }
-//    @Override
-//    public Event findEvent(int id){
-//        return eventRepository.findByEventId(id);
-//    }
+
 
     @Override
-    public List<Event> FindEventByVenueIdAndType(int venueId, String eventTypeName){
+    public List<Event> findEventByVenueIdAndType(int venueId, String eventTypeName){
         return eventRepository.findByVenue_VenueIdAndEventType_EventTypeName(venueId,eventTypeName);
     }
 

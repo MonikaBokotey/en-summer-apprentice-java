@@ -10,7 +10,6 @@ import java.util.List;
 @Service
 public interface EventService {
 
-   // Event findEvent(int id);
-List<Event> FindEventByVenueIdAndType(int venueId, String typeName);
+List<Event> findEventByVenueIdAndType(int venueId, String typeName);
 
 }

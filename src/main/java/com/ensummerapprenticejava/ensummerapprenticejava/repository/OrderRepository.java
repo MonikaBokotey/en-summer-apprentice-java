@@ -13,7 +13,4 @@ public interface OrderRepository extends CrudRepository<Orders, Integer>{
 
   List<Orders> findByCustomer_customerId(int customerId);
 
-//  @Query("select o.customer from orders o where o.customer.customerId=?1")
-//  Customer findCustomerByCustomerId(int customerId);
-
 }

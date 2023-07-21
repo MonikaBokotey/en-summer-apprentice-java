@@ -21,7 +21,7 @@ public class EventController {
     @GetMapping("/api/event")
     public List<Event> getEvents(@RequestParam(name = "venueId") int venueId,
                             @RequestParam(name = "eventType") String eventType){
-        return eventService.FindEventByVenueIdAndType(venueId,eventType);
+        return eventService.findEventByVenueIdAndType(venueId,eventType);
     }
 
 

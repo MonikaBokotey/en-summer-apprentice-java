@@ -6,9 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 
-        //List<Orders> findByCustomer_customerId(int customerId);
 
-//@Query("select o.customer from orders o where o.customer.customerId=?1")
   Customer findCustomerByCustomerId(int customerId);
 
           }
