@@ -37,6 +37,8 @@ public class Orders implements Serializable {
 
     }
 
+
+
     public int getOrderId() {
         return orderId;
     }
@@ -82,6 +84,14 @@ public class Orders implements Serializable {
     }
 
     public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public Orders(Customer customer, TicketCategory ticketCategory, Date orderedAt, int numberOfTickets, int totalPrice) {
+        this.customer = customer;
+        this.ticketCategory = ticketCategory;
+        this.orderedAt = orderedAt;
+        this.numberOfTickets = numberOfTickets;
         this.totalPrice = totalPrice;
     }
 }

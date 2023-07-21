@@ -26,5 +26,35 @@ public class TicketCategory implements Serializable {
 
     }
 
+    public int getTicketCategoryId() {
+        return ticketCategoryId;
+    }
 
+    public void setTicketCategoryId(int ticketCategoryId) {
+        this.ticketCategoryId = ticketCategoryId;
+    }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 }

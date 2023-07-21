@@ -1,6 +1,8 @@
 package com.ensummerapprenticejava.ensummerapprenticejava.repository;
+import com.ensummerapprenticejava.ensummerapprenticejava.model.Customer;
 import com.ensummerapprenticejava.ensummerapprenticejava.model.Event;
 import com.ensummerapprenticejava.ensummerapprenticejava.model.Orders;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +12,8 @@ import java.util.List;
 public interface OrderRepository extends CrudRepository<Orders, Integer>{
 
   List<Orders> findByCustomer_customerId(int customerId);
+
+//  @Query("select o.customer from orders o where o.customer.customerId=?1")
+//  Customer findCustomerByCustomerId(int customerId);
 
 }

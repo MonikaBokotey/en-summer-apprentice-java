@@ -19,5 +19,19 @@ public class EventType implements Serializable {
 
     }
 
+    public int getEvent_type_id() {
+        return event_type_id;
+    }
 
+    public void setEvent_type_id(int event_type_id) {
+        this.event_type_id = event_type_id;
+    }
+
+    public String getEventTypeName() {
+        return eventTypeName;
+    }
+
+    public void setEventTypeName(String eventTypeName) {
+        this.eventTypeName = eventTypeName;
+    }
 }

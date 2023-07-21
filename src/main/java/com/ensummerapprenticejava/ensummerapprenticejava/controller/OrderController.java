@@ -4,9 +4,9 @@ import com.ensummerapprenticejava.ensummerapprenticejava.model.Event;
 import com.ensummerapprenticejava.ensummerapprenticejava.model.Orders;
 import com.ensummerapprenticejava.ensummerapprenticejava.service.EventServiceImplementation;
 import com.ensummerapprenticejava.ensummerapprenticejava.service.OrderServiceImplementation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +22,11 @@ public class OrderController {
     public List<Orders> getOrders(){
         return orderService.DisplayOrders(4);
     }
+
+//    @PostMapping("/api/orders")
+//    public ResponseEntity<Orders> registerOrder(@RequestBody OrderRequest orderRequest){
+//        return new ResponseEntity<>(orderService.registerOrder(orderRequest), HttpStatus.CREATED);
+//    }
+
+
 }
